@@ -3,6 +3,8 @@ import { makeStyles } from "@mui/styles";
 export const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: theme.palette.white,
+    justifyContent: "center",
+    alignItems: "center",
     flexGrow: 1,
     height: "94px",
     boxShadow: "none",
@@ -25,6 +27,9 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "16px",
       color: theme.palette.secondary.main,
       fontFamily: "Poppins",
+      "&:hover": {
+        color: theme.palette.primary.main,
+      },
     },
   },
   mobileIcon: {

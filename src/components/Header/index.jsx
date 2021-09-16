@@ -9,14 +9,7 @@ function Header() {
 
   return (
     <AppBar className={classes.appBar} position="static">
-      <Container
-        maxWidth="lg"
-        style={{
-          height: "94px",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <Container maxWidth="lg">
         <Toolbar>
           {/* Logo */}
           <div className={classes.logo}>
