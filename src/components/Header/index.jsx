@@ -2,12 +2,21 @@ import React from "react";
 import Image from "next/image";
 import { useStyles } from "./style";
 import { AppBar, Container, Toolbar } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+
 function Header() {
   const classes = useStyles();
 
   return (
     <AppBar className={classes.appBar} position="static">
-      <Container>
+      <Container
+        maxWidth="lg"
+        style={{
+          height: "94px",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Toolbar>
           {/* Logo */}
           <div className={classes.logo}>
@@ -21,6 +30,8 @@ function Header() {
               </li>
             ))}
           </ul>
+          {/* Mobile Icon */}
+          <MenuIcon className={classes.mobileIcon} />
         </Toolbar>
       </Container>
     </AppBar>

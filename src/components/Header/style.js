@@ -4,6 +4,8 @@ export const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: theme.palette.white,
     flexGrow: 1,
+    height: "94px",
+    boxShadow: "none",
   },
   logo: {
     flexGrow: 1,
@@ -23,6 +25,13 @@ export const useStyles = makeStyles((theme) => ({
       fontSize: "16px",
       color: theme.palette.secondary.main,
       fontFamily: "Poppins",
+    },
+  },
+  mobileIcon: {
+    display: "none",
+    [theme.breakpoints.down("md")]: {
+      display: "block",
+      cursor: "pointer",
     },
   },
 }));
