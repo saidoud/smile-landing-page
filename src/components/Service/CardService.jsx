@@ -1,17 +1,24 @@
 import React from "react";
-import Image from "next/image";
 import { Card } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import Divider from "../ui/Divider";
 
-function CardService({ title, subTitle, iconUrl, link }) {
+function CardService({ title, subTitle, iconUrl, link, isBorder }) {
   const classes = useStyles();
+  const border = isBorder ? "2px solid #d8d8d9" : "none";
+
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} style={{ borderRight: border }}>
       <div className={classes.image}>
-        <Image src={iconUrl} height="50px" width="50px" />
+        <img
+          className={classes.icon}
+          src={iconUrl}
+          height="60px"
+          width="60px"
+        />
       </div>
       <p className={classes.title}>{title}</p>
-      <div></div>
+      <Divider dividerWidth="30px" />
       <p className={classes.subTitle}>{subTitle}</p>
       <a className={classes.link} href={link}>
         Read More
@@ -21,24 +28,60 @@ function CardService({ title, subTitle, iconUrl, link }) {
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
-  image: {},
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    justifyContent: "center",
+    padding: "20px",
+    boxShadow: "none",
+    borderRadius: "0",
+    [theme.breakpoints.down("sm")]: {
+      borderRight: "none",
+    },
+  },
+  image: {
+    height: "93px",
+    width: "93px",
+    position: "relative",
+    border: "3px solid",
+    borderRadius: "50%",
+    borderColor: theme.palette.light,
+    marginBottom: "15px",
+  },
+  icon: {
+    position: "absolute",
+    top: 15,
+    right: 11,
+  },
   title: {
     color: theme.palette.secondary.black,
     fontSize: "18px",
     lineHeight: "22px",
     fontWeight: "700",
-    marginTop: "10px",
-    marginBottom: "22px",
+    marginBottom: "10px",
   },
-  divider: {},
   subTitle: {
     color: theme.palette.secondary.main,
     fontSize: "16px",
     lineHeight: "24px",
     fontWeight: "400",
+    width: "90%",
+    marginTop: "10px",
   },
-  link: {},
+  link: {
+    fontSize: "14px",
+    textAlign: "inherit",
+    fontWeight: "400",
+    fontStyle: "normal",
+    color: theme.palette.primary.main,
+    textDecoration: "none",
+    "&:hover": {
+      borderBottom: "2px solid",
+      borderColor: theme.palette.primary.main,
+    },
+  },
 }));
 
 export default CardService;

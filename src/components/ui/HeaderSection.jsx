@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 import { Container } from "@mui/material";
+import Divider from "../ui/Divider";
 
 function HeaderSection({ title, subTitle }) {
   const classes = useStyles();
@@ -8,7 +9,7 @@ function HeaderSection({ title, subTitle }) {
     <Container className={classes.root} maxWidth="sm">
       <em className={classes.subTitle}>{subTitle}</em>
       <p className={classes.title}>{title}</p>
-      <div className={classes.divider}></div>
+      <Divider dividerWidth="65px" />
     </Container>
   );
 }
@@ -33,14 +34,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "700",
     marginTop: "10px",
     marginBottom: "22px",
-  },
-  divider: {
-    backgroundColor: theme.palette.primary.main,
-    height: "3px",
-    width: "65px",
-    display: "block",
-    marginLeft: "auto",
-    marginRight: "auto",
   },
 }));
 

@@ -8,7 +8,7 @@ function Banner() {
     <div className={classes.container}>
       <Image
         className={classes.backgroundImage}
-        src="/assets/carousel2.jpg"
+        src="/assets/carousel3.jpg"
         layout="fill"
       />
     </div>
