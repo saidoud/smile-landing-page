@@ -5,6 +5,7 @@ import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
 import Navbar from "../src/components/Navbar";
 import Service from "../src/components/Service";
+import Passion from "../src/components/Passion";
 import theme from "../src/theme";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Navbar />
         <Banner />
         <Service />
+        <Passion />
         <Footer />
       </ThemeProvider>
     </>

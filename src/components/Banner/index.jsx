@@ -6,27 +6,31 @@ function Banner() {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Image
+      {/* <Image
         className={classes.backgroundImage}
         src="/assets/carousel3.jpg"
         layout="fill"
-      />
+      /> */}
     </div>
   );
 }
 
-export const useStyles = makeStyles({
+const useStyles = makeStyles({
   container: {
-    position: "relative",
+    // position: "relative",
     height: "calc(100vh - 167px)",
     width: "100%",
+    backgroundImage: "url(/assets/carousel3-min.jpg)",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   },
-  backgroundImage: {
-    position: "absolute",
-    top: "0",
-    bottom: "0",
-    left: "0",
-    right: "0",
-  },
+  // backgroundImage: {
+  //   position: "absolute",
+  //   top: "0",
+  //   bottom: "0",
+  //   left: "0",
+  //   right: "0",
+  // },
 });
 export default Banner;
