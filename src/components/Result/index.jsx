@@ -47,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    [theme.breakpoints.down("md")]: {
+      padding: "20px 0px",
+    },
   },
   counter: {
     textAlign: "center",

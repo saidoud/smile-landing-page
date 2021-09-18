@@ -39,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "row",
     height: "70px",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+      padding: "5px 0px",
+    },
   },
   copyright: {
     fontSize: "16px",

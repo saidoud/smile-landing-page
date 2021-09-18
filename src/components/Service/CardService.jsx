@@ -37,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "20px",
     boxShadow: "none",
     borderRadius: "0",
-    [theme.breakpoints.down("sm")]: {
-      border: "none",
+    [theme.breakpoints.down("md")]: {
+      border: "none !important",
     },
   },
   image: {

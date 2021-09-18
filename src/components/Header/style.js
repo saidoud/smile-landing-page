@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) => ({
       textDecoration: "none",
       fontSize: "16px",
       color: theme.palette.secondary.main,
-      fontFamily: "Poppins",
+      fontFamily: "Lato",
       "&:hover": {
         color: theme.palette.primary.main,
       },

@@ -19,12 +19,12 @@ function Header() {
           <ul className={classes.navBar}>
             {data.map((item, index) => (
               <li key={index} className={classes.navLink}>
-                <a href={item.link}> {item.name}</a>
+                <a href={item.link}>{item.name}</a>
               </li>
             ))}
           </ul>
           {/* Mobile Icon */}
-          <MenuIcon className={classes.mobileIcon} />
+          <MenuIcon className={classes.mobileIcon} fontSize="large" />
         </Toolbar>
       </Container>
     </AppBar>

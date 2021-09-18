@@ -23,6 +23,7 @@ const useStyles = makeStyles({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
+    backgroundColor: "#cccccc",
   },
   // backgroundImage: {
   //   position: "absolute",

@@ -2,6 +2,9 @@ import { createTheme } from "@mui/material/styles";
 
 // Create a theme instance.
 const theme = createTheme({
+  typography: {
+    fontFamily: ["Lato"].join(","),
+  },
   palette: {
     primary: {
       main: "#26ade4",
