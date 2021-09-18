@@ -17,7 +17,7 @@ function HeaderSection({ title, subTitle }) {
 const useStyles = makeStyles((theme) => ({
   root: {
     textAlign: "center",
-    marginTop: "50px",
+
     alignItems: "center",
   },
   subTitle: {

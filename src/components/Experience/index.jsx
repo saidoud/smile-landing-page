@@ -5,7 +5,7 @@ import TeamCard from "./TeamCard";
 
 function Experience() {
   return (
-    <Container>
+    <Container style={{ marginTop: "50px" }}>
       <HeaderSection
         title="Highly Qualified Team Of Dentists"
         subTitle="Professionals who are immensely experienced"

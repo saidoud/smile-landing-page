@@ -5,7 +5,7 @@ import CardService from "./CardService";
 
 function Service() {
   return (
-    <div>
+    <div style={{ marginTop: "50px" }}>
       <HeaderSection
         title="Explore Dental Care Services"
         subTitle="Let us brighten your smile!"

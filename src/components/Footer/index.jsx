@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
-import { Container } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -15,12 +15,12 @@ function Footer() {
           <p className={classes.copyright}>
             Copyright 2019 SmileCare Theme | All Rights Reserved
           </p>
-          <div className={classes.icons}>
-            <FacebookTwoToneIcon className={classes.facebook} color="primary" />
-            <TwitterIcon color="primary" />
-            <LinkedInIcon color="primary" />
-            <GoogleIcon color="primary" />
-          </div>
+          <Stack direction="row" spacing={1}>
+            <FacebookTwoToneIcon />
+            <TwitterIcon />
+            <LinkedInIcon />
+            <GoogleIcon />
+          </Stack>
         </div>
       </Container>
     </footer>
@@ -48,7 +48,5 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.2px",
     flexGrow: 1,
   },
-  facebook: {},
-  icons: {},
 }));
 export default Footer;
