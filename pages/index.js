@@ -10,6 +10,8 @@ import Experience from "../src/components/Experience";
 import theme from "../src/theme";
 import Result from "../src/components/Result";
 import Testimonial from "../src/components/Testimonial";
+import Equipment from "../src/components/Equipement";
+import Update from "../src/components/Update";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         <Experience />
         <Result />
         <Testimonial />
+        <Equipment />
+        <Update />
         <Footer />
       </ThemeProvider>
     </>
