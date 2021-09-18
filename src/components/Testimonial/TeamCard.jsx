@@ -43,14 +43,14 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.black,
     fontWeight: "700",
     paddingBottom: "20px",
-    paddingTop: "110px",
+    paddingTop: "74px",
   },
   subTitle: {
     fontSize: "16px",
     lineHeight: "24px",
     color: theme.palette.secondary.main,
     fontWeight: "400",
-    padding: "20px 10px",
+    padding: "30px 10px",
   },
 }));
 
