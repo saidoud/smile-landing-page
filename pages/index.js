@@ -8,6 +8,7 @@ import Service from "../src/components/Service";
 import Passion from "../src/components/Passion";
 import Experience from "../src/components/Experience";
 import theme from "../src/theme";
+import Result from "../src/components/Result";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Service />
         <Passion />
         <Experience />
+        <Result />
         <Footer />
       </ThemeProvider>
     </>
