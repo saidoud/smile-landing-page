@@ -12,6 +12,7 @@ import Result from "../src/components/Result";
 import Testimonial from "../src/components/Testimonial";
 import Equipment from "../src/components/Equipement";
 import Update from "../src/components/Update";
+import Client from "../src/components/Client";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Testimonial />
         <Equipment />
         <Update />
+        <Client />
         <Footer />
       </ThemeProvider>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { makeStyles } from "@mui/styles";
 
 function Banner() {
@@ -10,6 +11,14 @@ function Banner() {
         src="/assets/carousel3.jpg"
         layout="fill"
       /> */}
+      <Image
+        alt="Mountains"
+        src="/assets/carousel3.jpg"
+        layout="fill"
+        objectFit="cover"
+        quality={30}
+        loading="eager"
+      />
     </div>
   );
 }
@@ -17,13 +26,17 @@ function Banner() {
 const useStyles = makeStyles({
   container: {
     // position: "relative",
-    height: "calc(100vh - 167px)",
-    width: "100%",
-    backgroundImage: "url(/assets/carousel3-min.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    backgroundColor: "#cccccc",
+    // height: "calc(100vh - 167px)",
+    // width: "100%",
+    // backgroundImage: "url(/assets/carousel3-min.jpg)",
+    // backgroundSize: "cover",
+    // backgroundPosition: "center",
+    // backgroundRepeat: "no-repeat",
+    // backgroundColor: "#cccccc",
+    position: "relative",
+    height: "100vh",
+    overflow: "hidden",
+    zIndex: -1,
   },
   // backgroundImage: {
   //   position: "absolute",
