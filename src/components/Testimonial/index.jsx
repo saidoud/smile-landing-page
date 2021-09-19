@@ -37,15 +37,17 @@ function Testimonial() {
         </Container>
       </div>
       <div className={classes.appointment}>
-        <Container style={{ padding: "50px 0" }}>
-          <p className={classes.title}>
-            Consult Our Expert & Get Quick Appointment
-          </p>
-          <Stack flexDirection="row">
-            <Contact Icon={MailOutlineIcon} title="Email:info@example.com" />
-            <Contact Icon={CallIcon} title="Email:info@example.com" />
-          </Stack>
-          <Button className={classes.button}>Get In Touch</Button>
+        <Container>
+          <div style={{ padding: "50px 0" }}>
+            <p className={classes.title}>
+              Consult Our Expert & Get Quick Appointment
+            </p>
+            <Stack flexDirection="row">
+              <Contact Icon={MailOutlineIcon} title="Email:info@example.com" />
+              <Contact Icon={CallIcon} title="Email:info@example.com" />
+            </Stack>
+            <Button className={classes.button}>Get In Touch</Button>
+          </div>
         </Container>
       </div>
     </>
