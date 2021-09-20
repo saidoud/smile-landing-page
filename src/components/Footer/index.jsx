@@ -1,28 +1,63 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
+import Image from "next/image";
 import { Container, Grid, Stack } from "@mui/material";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GoogleIcon from "@mui/icons-material/Google";
+import { useStyles } from "./style";
+import Input from "../ui/Input";
 
 function Footer() {
   const classes = useStyles();
+
+  const FooterHead = ({ children }) => (
+    <p className={classes.footerHead}>{children}</p>
+  );
+
+  const Contact = ({ title, subTitle, Icon }) => <p></p>;
+
   return (
     <footer>
       {/* Main Footer */}
       <div className={classes.mainFooter}>
         <Container>
-          <Grid container>
-            <Grid item xs={12} sm={6} md={3}></Grid>
+          <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={3}>
-              <p>Footer 2</p>
+              <Image
+                src="/assets/logo.png"
+                height="44"
+                width="173"
+                loading="lazy"
+              />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry’s standard dummy
+                text ever since the 1500s.
+              </p>
+              <Stack flexDirection="row" alignItems="center">
+                <FacebookTwoToneIcon />
+                <TwitterIcon />
+                <LinkedInIcon />
+                <GoogleIcon />
+              </Stack>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <p>Footer 3</p>
+              <FooterHead>Testimonials</FooterHead>
+              <p>
+                Pork chop drumstick eiusmod short ribs short loin boudln ground
+                round pork loin in harm hock excepteur occaecat
+              </p>
+              <a href="#/">-James Martin</a>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <p>Footer 4</p>
+              <FooterHead>Contact Us</FooterHead>
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+              <FooterHead>Subscribe</FooterHead>
+              <Input name="name" type="text" placeholder="Name" size={40} />
+              <Input name="email" type="email" placeholder="Email" size={40} />
+              <button className={classes.primary}>Send</button>
             </Grid>
           </Grid>
         </Container>
@@ -48,31 +83,4 @@ function Footer() {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  secondFooter: {
-    marginTop: "40px",
-    height: "70px",
-    backgroundColor: theme.palette.secondary.black,
-  },
-  mainFooter: {},
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "row",
-    height: "70px",
-    [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-      padding: "5px 0px",
-    },
-  },
-  copyright: {
-    fontSize: "16px",
-    lineHeight: "24px",
-    color: theme.palette.light,
-    fontWeight: "400",
-    letterSpacing: "0.2px",
-    flexGrow: 1,
-  },
-}));
 export default Footer;

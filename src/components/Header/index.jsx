@@ -17,7 +17,7 @@ function Header() {
               src="/assets/logo.png"
               height="44"
               width="173"
-              loading="lazy"
+              loading="eager"
             />
           </div>
           {/* Navbar */}

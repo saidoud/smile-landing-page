@@ -6,17 +6,19 @@ import { makeStyles } from "@mui/styles";
 function Client() {
   const classes = useStyles();
 
-  const ClientContainer = ({ imageUrl }) => (
-    <div className={classes.client}>
-      <Image
-        className={classes.image}
-        src={imageUrl}
-        width="150px"
-        height="40px"
-        loading="lazy"
-      />
-    </div>
-  );
+  function ClientContainer({ imageUrl }) {
+    return (
+      <div className={classes.client}>
+        <Image
+          className={classes.image}
+          src={imageUrl}
+          width="150px"
+          height="40px"
+          loading="lazy"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className={classes.root}>

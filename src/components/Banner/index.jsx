@@ -13,9 +13,9 @@ function Banner() {
       /> */}
       <Image
         alt="Mountains"
-        src="/assets/carousel3.jpg"
+        src="/assets/carousel3-min.jpg"
         layout="fill"
-        loading="lazy"
+        loading="eager"
       />
     </div>
   );
