@@ -10,25 +10,25 @@ function Footer() {
   const classes = useStyles();
   return (
     <footer>
+      {/* Main Footer */}
       <div className={classes.mainFooter}>
         <Container>
           <Grid container>
-            <Grid xs={12} sm={6} md={3}>
-              <p>Footer 1</p>
-            </Grid>
-            <Grid xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3}></Grid>
+            <Grid item xs={12} sm={6} md={3}>
               <p>Footer 2</p>
             </Grid>
-            <Grid xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <p>Footer 3</p>
             </Grid>
-            <Grid xs={12} sm={6} md={3}>
+            <Grid item xs={12} sm={6} md={3}>
               <p>Footer 4</p>
             </Grid>
           </Grid>
         </Container>
       </div>
 
+      {/* Second Footer */}
       <div className={classes.secondFooter}>
         <Container>
           <div className={classes.container}>

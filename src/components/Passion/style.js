@@ -16,5 +16,8 @@ export const useStyles = makeStyles((theme) => ({
   content: {
     backgroundColor: theme.palette.backgroundLight,
     padding: "30px 100px",
+    [theme.breakpoints.down("sm")]: {
+      padding: "30px 50px",
+    },
   },
 }));

@@ -15,9 +15,7 @@ function Banner() {
         alt="Mountains"
         src="/assets/carousel3.jpg"
         layout="fill"
-        objectFit="cover"
-        quality={30}
-        loading="eager"
+        loading="lazy"
       />
     </div>
   );

@@ -42,7 +42,7 @@ function Testimonial() {
             <p className={classes.title}>
               Consult Our Expert & Get Quick Appointment
             </p>
-            <Stack flexDirection="row">
+            <Stack direction={{ xs: "column", md: "row" }} spacing={{ xs: 2 }}>
               <Contact Icon={MailOutlineIcon} title="Email:info@example.com" />
               <Contact Icon={CallIcon} title="Email:info@example.com" />
             </Stack>

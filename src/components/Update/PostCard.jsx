@@ -8,7 +8,7 @@ function PostCard({ title, date, userName, detail, imageUrl }) {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
-      <CardMedia component="img" image={imageUrl} alt={title} />
+      <CardMedia component="img" image={imageUrl} alt={title} loading="lazy" />
       <CardContent style={{ padding: "30px 20px" }}>
         <p className={classes.title}> {title}</p>
         <Stack flexDirection="row" style={{ paddingBottom: "20px" }}>

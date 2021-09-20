@@ -5,7 +5,12 @@ function PassionCard({ title, subTitle, imageUrl }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <img className={classes.image} src={imageUrl} />
+      <img
+        className={classes.image}
+        src={imageUrl}
+        loading="lazy"
+        alt={title}
+      />
       <div className={classes.content}>
         <p className={classes.title}>{title}</p>
         <p className={classes.subTitle}> {subTitle}</p>

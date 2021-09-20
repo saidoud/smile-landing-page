@@ -11,7 +11,7 @@ function TeamCard({ title, subTitle, imageUrl }) {
   const classes = useStyles();
   return (
     <Card className={classes.root}>
-      <CardMedia component="img" image={imageUrl} alt="green iguana" />
+      <CardMedia component="img" image={imageUrl} alt={title} loading="lazy" />
       <CardContent>
         <p className={classes.title}>{title}</p>
         <p className={classes.subTitle}>{subTitle}</p>

@@ -13,7 +13,12 @@ function Header() {
         <Toolbar>
           {/* Logo */}
           <div className={classes.logo}>
-            <Image src="/assets/logo.png" height="44" width="173" />
+            <Image
+              src="/assets/logo.png"
+              height="44"
+              width="173"
+              loading="lazy"
+            />
           </div>
           {/* Navbar */}
           <ul className={classes.navBar}>

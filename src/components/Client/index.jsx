@@ -13,6 +13,7 @@ function Client() {
         src={imageUrl}
         width="150px"
         height="40px"
+        loading="lazy"
       />
     </div>
   );

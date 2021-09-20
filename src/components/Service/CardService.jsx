@@ -12,9 +12,11 @@ function CardService({ title, subTitle, iconUrl, link, isBorder }) {
       <div className={classes.image}>
         <img
           className={classes.icon}
+          alt={title}
           src={iconUrl}
           height="60px"
           width="60px"
+          loading="lazy"
         />
       </div>
       <p className={classes.title}>{title}</p>
