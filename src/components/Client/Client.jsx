@@ -67,4 +67,5 @@ const data = [
   ,
   "/assets/client1.png",
 ];
+
 export default Client;

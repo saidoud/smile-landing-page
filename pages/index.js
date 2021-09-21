@@ -13,7 +13,7 @@ import Result from "../src/components/Result";
 import Testimonial from "../src/components/Testimonial";
 import Equipment from "../src/components/Equipement";
 import Update from "../src/components/Update";
-import Client from "../src/components/Client";
+import Client from "../src/components/Client/Client";
 import "aos/dist/aos.css";
 
 export default function Home() {
@@ -21,13 +21,6 @@ export default function Home() {
     <>
       <Head>
         <title>Smile Care</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-        <meta name="description" content="Dentiste Landing Page" />
-        <meta name="keywords" content="Dentiste , Smile House" />
-        <meta name="author" content="Said Ouddou" />
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
