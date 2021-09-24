@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { useStyles } from "./style";
-import { AppBar, Container, Toolbar } from "@mui/material";
+import { AppBar, Container, Toolbar, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function Header() {
+function Header({ onToggle }) {
   const classes = useStyles();
 
   return (
@@ -29,7 +29,9 @@ function Header() {
             ))}
           </ul>
           {/* Mobile Icon */}
-          <MenuIcon className={classes.mobileIcon} fontSize="large" />
+          <IconButton onClick={onToggle}>
+            <MenuIcon className={classes.mobileIcon} fontSize="large" />
+          </IconButton>
         </Toolbar>
       </Container>
     </AppBar>

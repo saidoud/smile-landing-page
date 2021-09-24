@@ -15,8 +15,14 @@ import Equipment from "../src/components/Equipement";
 import Update from "../src/components/Update";
 import Client from "../src/components/Client/Client";
 import "aos/dist/aos.css";
+import { useState } from "react";
+import SideBar from "../src/components/Header/SideBar";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const onToggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Head>
@@ -24,7 +30,8 @@ export default function Home() {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header />
+        <Header onToggle={onToggle} />
+        <SideBar isOpen={isOpen} onToggle={onToggle} />
         <Navbar />
         <Banner />
         <Service />
