@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@mui/styles";
 
-function Input({ name, size, placeholder, type }) {
+function Input({ name, size, placeholder, type, style }) {
   const classes = useStyles();
   return (
     <input
@@ -10,6 +10,7 @@ function Input({ name, size, placeholder, type }) {
       type={type}
       placeholder={placeholder}
       size={size}
+      style={style}
     />
   );
 }

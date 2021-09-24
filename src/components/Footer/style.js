@@ -15,6 +15,7 @@ export const useStyles = makeStyles((theme) => ({
     lineHeight: "22px",
     color: theme.palette.secondary.black,
     fontWeight: "700",
+    marginBottom: "1em",
   },
   container: {
     display: "flex",
@@ -38,18 +39,23 @@ export const useStyles = makeStyles((theme) => ({
   primary: {
     backgroundColor: theme.palette.primary.main,
     border: "1px solid #26ade4",
-    fontFamily: "Lato",
-    fontSize: "18px",
+    font: "normal 700 18px/20px Poppins",
     textAlign: "center",
-    fontWeight: "700",
-    fontStyle: "normal",
     color: theme.palette.white,
-    padding: "15px 20px",
+    padding: "13px 25px",
     borderRadius: "3px",
     cursor: "pointer",
     "&:hover": {
       backgroundColor: theme.palette.white,
       color: theme.palette.primary.main,
     },
+  },
+  paragraph: {
+    font: "normal 400 16px/24px Poppins",
+  },
+  link: {
+    font: "normal 700 16px/24px Poppins",
+    color: theme.palette.primary.main,
+    textDecoration: "none",
   },
 }));

@@ -5,6 +5,9 @@ import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GoogleIcon from "@mui/icons-material/Google";
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
+import RoomIcon from "@mui/icons-material/Room";
 import { useStyles } from "./style";
 import Input from "../ui/Input";
 
@@ -15,7 +18,18 @@ function Footer() {
     <p className={classes.footerHead}>{children}</p>
   );
 
-  const Contact = ({ title, subTitle, Icon }) => <p></p>;
+  const Contact = ({ title, subTitle, Icon }) => (
+    <Stack flexDirection="row" style={{ marginBottom: "10px" }}>
+      <div style={{ marginRight: "10px" }}>
+        <Icon />
+      </div>
+
+      <Stack flexDirection="column">
+        <p className={classes.title}>{title}</p>
+        <p className={classes.subTitle}>{subTitle}</p>
+      </Stack>
+    </Stack>
+  );
 
   return (
     <footer>
@@ -30,12 +44,17 @@ function Footer() {
                 width="173"
                 loading="lazy"
               />
-              <p>
+              <p className={classes.paragraph}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry’s standard dummy
                 text ever since the 1500s.
               </p>
-              <Stack flexDirection="row" alignItems="center">
+              <Stack
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="space-between"
+                style={{ width: "150px", marginTop: "4em" }}
+              >
                 <FacebookTwoToneIcon />
                 <TwitterIcon />
                 <LinkedInIcon />
@@ -44,19 +63,48 @@ function Footer() {
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <FooterHead>Testimonials</FooterHead>
-              <p>
+              <p className={classes.paragraph} style={{ marginBottom: "1em" }}>
                 Pork chop drumstick eiusmod short ribs short loin boudln ground
                 round pork loin in harm hock excepteur occaecat
               </p>
-              <a href="#/">-James Martin</a>
+              <a href="#/" className={classes.link}>
+                -James Martin
+              </a>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <FooterHead>Contact Us</FooterHead>
+              <Contact
+                title="Give us a Call"
+                subTitle="(01) 123 456 7890"
+                Icon={CallIcon}
+              />
+              <Contact
+                title="Send us a Message"
+                subTitle="info@example.com"
+                Icon={EmailIcon}
+              />
+              <Contact
+                title=""
+                subTitle="E-51, phase 8B, Mohali, Punjab, 151001"
+                Icon={RoomIcon}
+              />
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <FooterHead>Subscribe</FooterHead>
-              <Input name="name" type="text" placeholder="Name" size={40} />
-              <Input name="email" type="email" placeholder="Email" size={40} />
+              <Input
+                name="name"
+                type="text"
+                placeholder="Name"
+                size={40}
+                style={{ marginBottom: "20px" }}
+              />
+              <Input
+                name="email"
+                type="email"
+                placeholder="Email"
+                size={40}
+                style={{ marginBottom: "20px" }}
+              />
               <button className={classes.primary}>Send</button>
             </Grid>
           </Grid>
