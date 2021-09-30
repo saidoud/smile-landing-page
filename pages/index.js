@@ -17,6 +17,7 @@ import Client from "../src/components/Client/Client";
 import "aos/dist/aos.css";
 import { useState } from "react";
 import SideBar from "../src/components/Header/SideBar";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);

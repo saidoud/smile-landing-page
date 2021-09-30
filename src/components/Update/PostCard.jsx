@@ -26,6 +26,11 @@ function PostCard({ title, date, userName, detail, imageUrl }) {
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: "500px",
+    transition: "transform 1s",
+    boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)",
+    "&:hover": {
+      transform: "scale(1.05)",
+    },
   },
   title: {
     font: "normal 700 18px/22px Lato",

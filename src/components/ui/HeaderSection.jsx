@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import { Container } from "@mui/material";
 import Divider from "../ui/Divider";
+import useAnimation from "../../hooks/useAnimation";
 
 function HeaderSection({ title, subTitle, ...otherProps }) {
   const classes = useStyles();
+  useAnimation();
+
   return (
-    <Container className={classes.root} maxWidth="sm" style={{ ...otherProps }}>
+    <Container
+      className={classes.root}
+      maxWidth="sm"
+      style={{ ...otherProps }}
+      data-aos="fade-up"
+    >
       <em className={classes.subTitle}>{subTitle}</em>
       <p className={classes.title}>{title}</p>
       <Divider dividerWidth="65px" />
