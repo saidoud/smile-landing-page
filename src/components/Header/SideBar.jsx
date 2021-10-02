@@ -5,6 +5,7 @@ import { makeStyles } from "@mui/styles";
 
 function SideBar({ isOpen, onToggle }) {
   const classes = useStyles();
+  if (!isOpen) return null;
   return (
     <aside
       className={classes.root}

@@ -1,11 +1,17 @@
 import { Avatar, Card } from "@mui/material";
 import React from "react";
 import { makeStyles } from "@mui/styles";
+import useAnimation from "../../hooks/useAnimation";
 
 function TeamCard({ title, subTitle, imageUrl }) {
   const classes = useStyles();
+  useAnimation();
   return (
-    <Card className={classes.root}>
+    <Card
+      className={classes.root}
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+    >
       <Avatar
         alt={title}
         src={imageUrl}

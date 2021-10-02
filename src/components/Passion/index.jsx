@@ -7,7 +7,12 @@ import { useStyles } from "./style";
 function Passion() {
   const classes = useStyles();
   return (
-    <Grid className={classes.root} container style={{ marginTop: "40px" }}>
+    <Grid
+      className={classes.root}
+      container
+      style={{ marginTop: "40px" }}
+      id="Features"
+    >
       <Grid className={classes.image} item xs={12} md={6}></Grid>
       <Grid className={classes.content} item xs={12} md={6}>
         <Grid container>

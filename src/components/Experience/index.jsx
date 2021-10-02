@@ -9,7 +9,7 @@ function Experience() {
     Aos.init();
   });
   return (
-    <Container style={{ marginTop: "50px" }}>
+    <Container style={{ marginTop: "50px" }} id="Team">
       <HeaderSection
         title="Highly Qualified Team Of Dentists"
         subTitle="Professionals who are immensely experienced"

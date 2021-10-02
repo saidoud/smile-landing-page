@@ -3,11 +3,14 @@ import { makeStyles } from "@mui/styles";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PersonIcon from "@mui/icons-material/Person";
 import React from "react";
+import useAnimation from "../../hooks/useAnimation";
 
 function PostCard({ title, date, userName, detail, imageUrl }) {
   const classes = useStyles();
+  useAnimation();
+
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} data-aos="zoom-in-up">
       <CardMedia component="img" image={imageUrl} alt={title} loading="lazy" />
       <CardContent style={{ padding: "30px 20px" }}>
         <p className={classes.title}> {title}</p>

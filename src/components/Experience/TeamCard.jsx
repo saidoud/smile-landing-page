@@ -6,11 +6,14 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GoogleIcon from "@mui/icons-material/Google";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
+import useAnimation from "../../hooks/useAnimation";
 
 function TeamCard({ title, subTitle, imageUrl }) {
   const classes = useStyles();
+  useAnimation();
+
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} data-aos="zoom-in">
       <CardMedia component="img" image={imageUrl} alt={title} loading="lazy" />
       <CardContent>
         <p className={classes.title}>{title}</p>

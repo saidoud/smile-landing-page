@@ -4,7 +4,7 @@ import HeaderSection from "../ui/HeaderSection";
 
 function Equipment() {
   return (
-    <>
+    <div id="Equipments">
       <HeaderSection
         title="Our Equipments & Surgery"
         subTitle="Explore Case Study Album"
@@ -18,7 +18,7 @@ function Equipment() {
           </ImageListItem>
         ))}
       </ImageList>
-    </>
+    </div>
   );
 }
 

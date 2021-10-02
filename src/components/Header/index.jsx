@@ -29,8 +29,8 @@ function Header({ onToggle }) {
             ))}
           </ul>
           {/* Mobile Icon */}
-          <IconButton onClick={onToggle}>
-            <MenuIcon className={classes.mobileIcon} fontSize="large" />
+          <IconButton onClick={onToggle} className={classes.mobileIcon}>
+            <MenuIcon fontSize="large" />
           </IconButton>
         </Toolbar>
       </Container>
@@ -41,31 +41,32 @@ function Header({ onToggle }) {
 const data = [
   {
     name: "Home",
-    link: "https://www.w3schools.com/css",
-  },
-  {
-    name: "About us",
-    link: "https://www.google.com/",
-  },
-  {
-    name: "Features",
-    link: "https://www.google.com/",
-  },
-  {
-    name: "Pages",
-    link: "https://www.google.com/",
+    link: "#",
   },
   {
     name: "Services",
-    link: "https://www.google.com/",
+    link: "#Services",
   },
   {
-    name: "Shop",
-    link: "https://www.google.com/",
+    name: "Features",
+    link: "#Features",
   },
   {
-    name: "Contact Us",
-    link: "https://www.google.com/",
+    name: "Team",
+    link: "#Team",
+  },
+
+  {
+    name: "Testimonials",
+    link: "#Testimonials",
+  },
+  {
+    name: "Equipments",
+    link: "#Equipments",
+  },
+  {
+    name: "About us",
+    link: "#About",
   },
 ];
 

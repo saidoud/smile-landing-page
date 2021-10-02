@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
-import { Container, Grid, Stack } from "@mui/material";
+import { Container, Stack } from "@mui/material";
 import Divider from "@mui/material/Divider";
+import CountUp from "react-countup";
 
 function Result() {
   const classes = useStyles();
+  const [isVisible, setIsVisible] = useState(false);
+
   const Counter = ({ count, title }) => (
     <div className={classes.counter}>
-      <p className={classes.count}>{count}</p>
+      <p className={classes.count}>
+        <CountUp
+          start={isVisible ? 0 : null}
+          end={count}
+          duration={2}
+          redraw={true}
+        ></CountUp>
+      </p>
       <p className={classes.title}>{title}</p>
     </div>
   );
@@ -29,7 +39,11 @@ function Result() {
           alignItems="center"
         >
           {data.map((item, index) => (
-            <Counter count={item.count} title={item.title} key={index} />
+            <Counter
+              count={item.count}
+              title={item.title}
+              key={index}
+            ></Counter>
           ))}
         </Stack>
       </Container>
@@ -72,23 +86,23 @@ const useStyles = makeStyles((theme) => ({
 
 const data = [
   {
-    count: "15143",
+    count: 15143,
     title: "Patients",
   },
   {
-    count: "536",
+    count: 536,
     title: "Cosmetic Surgery",
   },
   {
-    count: "3223",
+    count: 3223,
     title: "Hours Of Work",
   },
   {
-    count: "818",
+    count: 818,
     title: "Dental Implants",
   },
   {
-    count: "323",
+    count: 323,
     title: "Online Appointments",
   },
 ];

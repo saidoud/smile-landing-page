@@ -20,7 +20,7 @@ function Testimonial() {
 
   return (
     <>
-      <div className={classes.root}>
+      <div className={classes.root} id="Testimonials">
         <Container>
           <HeaderSection subTitle="Testimonials" title="Our Success Stories" />
           <Grid container spacing={3} style={{ paddingTop: "100px" }}>

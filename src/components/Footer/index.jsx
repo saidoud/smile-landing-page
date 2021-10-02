@@ -32,7 +32,7 @@ function Footer() {
   );
 
   return (
-    <footer>
+    <footer id="About">
       {/* Main Footer */}
       <div className={classes.mainFooter}>
         <Container>
@@ -119,10 +119,10 @@ function Footer() {
               Copyright 2019 SmileCare Theme | All Rights Reserved
             </p>
             <Stack direction="row" spacing={1}>
-              <FacebookTwoToneIcon />
-              <TwitterIcon />
-              <LinkedInIcon />
-              <GoogleIcon />
+              <FacebookTwoToneIcon sx={{ color: "#fff" }} />
+              <TwitterIcon sx={{ color: "#fff" }} />
+              <LinkedInIcon sx={{ color: "#fff" }} />
+              <GoogleIcon sx={{ color: "#fff" }} />
             </Stack>
           </div>
         </Container>
