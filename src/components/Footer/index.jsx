@@ -55,10 +55,18 @@ function Footer() {
                 justifyContent="space-between"
                 style={{ width: "150px", marginTop: "4em" }}
               >
-                <FacebookTwoToneIcon />
-                <TwitterIcon />
-                <LinkedInIcon />
-                <GoogleIcon />
+                <a href="#">
+                  <FacebookTwoToneIcon />
+                </a>
+                <a href="#">
+                  <TwitterIcon />
+                </a>
+                <a href="#">
+                  <LinkedInIcon />
+                </a>
+                <a href="#">
+                  <GoogleIcon />
+                </a>
               </Stack>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
@@ -113,17 +121,17 @@ function Footer() {
 
       {/* Second Footer */}
       <div className={classes.secondFooter}>
-        <Container>
+        <Container sx={{ textAlign: "center" }}>
           <div className={classes.container}>
             <p className={classes.copyright}>
               Copyright 2019 SmileCare Theme | All Rights Reserved
             </p>
-            <Stack direction="row" spacing={1}>
+            {/* <Stack direction="row" spacing={1}>
               <FacebookTwoToneIcon sx={{ color: "#fff" }} />
               <TwitterIcon sx={{ color: "#fff" }} />
               <LinkedInIcon sx={{ color: "#fff" }} />
               <GoogleIcon sx={{ color: "#fff" }} />
-            </Stack>
+            </Stack> */}
           </div>
         </Container>
       </div>

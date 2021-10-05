@@ -23,11 +23,11 @@ function Equipment() {
 }
 
 const images = [
-  "/assets/passion.png",
-  "/assets/passion.png",
-  "/assets/passion.png",
-  "/assets/passion.png",
-  "/assets/passion.png",
-  "/assets/passion.png",
+  "/assets/feature1.jpg",
+  "/assets/feature2.jpg",
+  "/assets/feature3.jpg",
+  "/assets/feature4.jpg",
+  "/assets/feature5.jpg",
+  "/assets/feature6.jpg",
 ];
 export default Equipment;

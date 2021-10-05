@@ -62,13 +62,13 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
   },
   {
-    imageUrl: "/assets/team1.jpg",
+    imageUrl: "/assets/team2.jpg",
     title: "Dr. Eugene Reynolds",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
   },
   {
-    imageUrl: "/assets/team1.jpg",
+    imageUrl: "/assets/team3.jpg",
     title: "Dr. Katharine Martin",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",

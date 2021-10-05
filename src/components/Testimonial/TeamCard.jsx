@@ -7,11 +7,7 @@ function TeamCard({ title, subTitle, imageUrl }) {
   const classes = useStyles();
   useAnimation();
   return (
-    <Card
-      className={classes.root}
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-    >
+    <Card className={classes.root} data-aos="zoom-in-up">
       <Avatar
         alt={title}
         src={imageUrl}

@@ -42,7 +42,7 @@ const data = [
   },
   {
     title: "Best dental clinic in your country",
-    imageUrl: "/assets/post1.jpg",
+    imageUrl: "/assets/feature1.jpg",
     detail:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     date: "June 30, 2021",
@@ -50,7 +50,7 @@ const data = [
   },
   {
     title: "How to get rid of bad smell in between teeth",
-    imageUrl: "/assets/post1.jpg",
+    imageUrl: "/assets/feature6.jpg",
     detail:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum",
     date: "June 30, 2021",

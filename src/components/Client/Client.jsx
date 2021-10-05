@@ -12,7 +12,7 @@ function Client() {
         <Image
           className={classes.image}
           src={imageUrl}
-          width="150px"
+          width="200px"
           height="40px"
           loading="lazy"
         />
@@ -60,12 +60,12 @@ export const useStyles = makeStyles((theme) => ({
 
 const data = [
   "/assets/client1.png",
-  "/assets/client1.png",
-  "/assets/client1.png",
+  "/assets/client2.png",
+  "/assets/client3.png",
   ,
-  "/assets/client1.png",
+  "/assets/client4.png",
   ,
-  "/assets/client1.png",
+  "/assets/client5.png",
 ];
 
 export default Client;

@@ -36,22 +36,22 @@ function Experience() {
 
 const data = [
   {
-    title: "Dr. Johnson Deo",
-    subTitle: "M.D, Orthodontist",
-    imageUrl: "/assets/person3.png",
-    animation: "fade-left",
-  },
-  {
     title: "Dr. Eugene Reynolds",
     subTitle: "M.D, Orthodontist",
-    imageUrl: "/assets/person3.png",
+    imageUrl: "/assets/team2.jpg",
     animation: "fade-up",
   },
   {
     title: "Dr. Jason Keller",
     subTitle: "M.D, Orthodontist",
-    imageUrl: "/assets/person3.png",
+    imageUrl: "/assets/team3.jpg",
     animation: "fade-right",
+  },
+  {
+    title: "Dr. Johnson Deo",
+    subTitle: "M.D, Orthodontist",
+    imageUrl: "/assets/person3.png",
+    animation: "fade-left",
   },
 ];
 

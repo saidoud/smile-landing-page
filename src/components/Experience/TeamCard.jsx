@@ -19,11 +19,21 @@ function TeamCard({ title, subTitle, imageUrl }) {
         <p className={classes.title}>{title}</p>
         <p className={classes.subTitle}>{subTitle}</p>
         <div className={classes.icons}>
-          <FacebookIcon className={classes.icon} />
-          <TwitterIcon className={classes.icon} />
-          <GoogleIcon className={classes.icon} />
-          <LinkedInIcon className={classes.icon} />
-          <PinterestIcon className={classes.icon} />
+          <a href="#">
+            <FacebookIcon className={classes.icon} />
+          </a>
+          <a href="#">
+            <TwitterIcon className={classes.icon} />
+          </a>
+          <a href="#">
+            <GoogleIcon className={classes.icon} />
+          </a>
+          <a href="#">
+            <LinkedInIcon className={classes.icon} />
+          </a>
+          <a href="#">
+            <PinterestIcon className={classes.icon} />
+          </a>
         </div>
       </CardContent>
     </Card>
@@ -51,8 +61,9 @@ const useStyles = makeStyles({
   },
   icons: {
     border: "1px solid #eaeaea",
-    color: "#BABABA",
-    padding: " 5px 10px",
+    padding: " 10px 10px",
+    paddingTop: "15px",
+    paddingBottom: "10px",
     marginTop: "15px",
   },
   icon: {

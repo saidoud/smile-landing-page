@@ -30,21 +30,21 @@ function Navbar() {
 const data = [
   {
     title: "Call us",
-    subTitle: "tel:+212620762497",
+    subTitle: "tel:123 456 7890",
     Icon: CallIcon,
-    link: "https://mui.com/components/material-icons/",
+    link: "#",
   },
   {
     title: "Book Appointment",
     subTitle: "mailto:info@example.com",
     Icon: MailOutlineIcon,
-    link: "https://mui.com/components/material-icons/",
+    link: "#",
   },
   {
     title: "Opening Hours",
     subTitle: "Mon-Fri : 8:00 - 17:00",
     Icon: AccessTimeIcon,
-    link: "https://mui.com/components/material-icons/",
+    link: "#",
   },
 ];
 
