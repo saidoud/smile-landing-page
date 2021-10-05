@@ -1,6 +1,6 @@
 import React from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import { IconButton } from "@mui/material";
+import { IconButton, Stack, Button } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 function SideBar({ isOpen, onToggle }) {
@@ -15,6 +15,17 @@ function SideBar({ isOpen, onToggle }) {
         <IconButton className={classes.closeIcon} onClick={onToggle}>
           <CloseIcon fontSize="large" />
         </IconButton>
+        <Stack
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          {data.map((item, index) => (
+            <Button onClick={onToggle} key={index} className={classes.navLink}>
+              <a href={item.link}>{item.name}</a>
+            </Button>
+          ))}
+        </Stack>
       </div>
     </aside>
   );
@@ -40,6 +51,52 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     outline: "none",
   },
+  navLink: {
+    marginTop: "15px",
+    padding: "5px 0px",
+    textTransform: "capitalize",
+    "& a": {
+      textDecoration: "none",
+      fontSize: "25px",
+      color: theme.palette.secondary.main,
+      fontFamily: "Lato",
+      "&:hover": {
+        color: "white",
+      },
+    },
+  },
 }));
+
+const data = [
+  {
+    name: "Home",
+    link: "#",
+  },
+  {
+    name: "Services",
+    link: "#Services",
+  },
+  {
+    name: "Features",
+    link: "#Features",
+  },
+  {
+    name: "Team",
+    link: "#Team",
+  },
+
+  {
+    name: "Testimonials",
+    link: "#Testimonials",
+  },
+  {
+    name: "Equipments",
+    link: "#Equipments",
+  },
+  {
+    name: "About us",
+    link: "#About",
+  },
+];
 
 export default SideBar;
