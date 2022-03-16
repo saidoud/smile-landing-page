@@ -19,7 +19,6 @@ function Service() {
                 subTitle={item.subTitle}
                 iconUrl={item.iconUrl}
                 link={item.link}
-                isBorder={item.isBorder}
               />
             </Grid>
           ))}
@@ -36,7 +35,6 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id",
     iconUrl: "/assets/dentiste1.png",
     link: "https://www.google.com/",
-    isBorder: true,
   },
 
   {
@@ -45,7 +43,6 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id",
     iconUrl: "/assets/dentiste2.png",
     link: "https://www.google.com/",
-    isBorder: true,
   },
 
   {
@@ -54,7 +51,6 @@ const data = [
       "Duas molestias excepturi sint occaecati cupiditate non provident, similique sunt",
     iconUrl: "/assets/dentiste3.png",
     link: "https://www.google.com/",
-    isBorder: false,
   },
   {
     title: "Root Canal Therapy",
@@ -62,7 +58,6 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id",
     iconUrl: "/assets/dentiste4.png",
     link: "https://www.google.com/",
-    isBorder: true,
   },
   {
     title: "Smile Enhanment",
@@ -70,7 +65,6 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id",
     iconUrl: "/assets/dentiste5.png",
     link: "https://www.google.com/",
-    isBorder: true,
   },
   {
     title: "Routine Checkup",
@@ -78,7 +72,6 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id",
     iconUrl: "/assets/dentiste6.png",
     link: "https://www.google.com/",
-    isBorder: false,
   },
 ];
 

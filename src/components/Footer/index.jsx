@@ -56,16 +56,16 @@ function Footer() {
                 style={{ width: "150px", marginTop: "4em" }}
               >
                 <a href="#">
-                  <FacebookTwoToneIcon />
+                  <FacebookTwoToneIcon color="secondary" />
                 </a>
                 <a href="#">
-                  <TwitterIcon />
+                  <TwitterIcon color="secondary" />
                 </a>
                 <a href="#">
-                  <LinkedInIcon />
+                  <LinkedInIcon color="secondary" />
                 </a>
                 <a href="#">
-                  <GoogleIcon />
+                  <GoogleIcon color="secondary" />
                 </a>
               </Stack>
             </Grid>
@@ -124,14 +124,8 @@ function Footer() {
         <Container sx={{ textAlign: "center" }}>
           <div className={classes.container}>
             <p className={classes.copyright}>
-              Copyright 2019 SmileCare Theme | All Rights Reserved
+              Copyright 2022 Said Ouddou | All Rights Reserved
             </p>
-            {/* <Stack direction="row" spacing={1}>
-              <FacebookTwoToneIcon sx={{ color: "#fff" }} />
-              <TwitterIcon sx={{ color: "#fff" }} />
-              <LinkedInIcon sx={{ color: "#fff" }} />
-              <GoogleIcon sx={{ color: "#fff" }} />
-            </Stack> */}
           </div>
         </Container>
       </div>

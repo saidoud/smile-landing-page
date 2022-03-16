@@ -8,7 +8,7 @@ function CardService({ title, subTitle, iconUrl, link, isBorder }) {
   const border = isBorder ? "2px solid #d8d8d9" : "none";
 
   return (
-    <Card className={classes.root} style={{ borderRight: border }}>
+    <Card className={classes.root}>
       <div className={classes.image}>
         <img
           className={classes.icon}

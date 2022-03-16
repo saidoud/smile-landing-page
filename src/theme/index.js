@@ -3,7 +3,8 @@ import { createTheme } from "@mui/material/styles";
 // Create a theme instance.
 const theme = createTheme({
   typography: {
-    fontFamily: ["Lato"].join(","),
+    //fontFamily: ["Lato"].join(","),
+    fontFamily: "'Lato', sans-serif"
   },
   palette: {
     primary: {
