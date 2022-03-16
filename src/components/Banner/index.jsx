@@ -1,21 +1,7 @@
 import React from "react";
-import { makeStyles } from "@mui/styles";
-import Slider from "react-slick";
 import { Box, Button, Container, Stack, Typography } from "@mui/material";
-import Image from "next/image";
+
 function Banner() {
-  const classes = useStyles();
-  const settings = {
-    dots: true,
-    fade: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    className: "center",
-    centerMode: true,
-    centerPadding: "60px",
-  };
   return (
     <section>
       <Box
@@ -73,21 +59,4 @@ function Banner() {
   );
 }
 
-const useStyles = makeStyles({
-  // container: {
-  //   backgroundColor: "#26ADE4",
-  //   position: "relative",
-  //   height: "80vh",
-  //   overflow: "hidden",
-  //   zIndex: -1,
-  // },
-  container: {
-    position: "fixed",
-    height: "100vh",
-    width: "100vw",
-    overflow: "hidden",
-    zIndex: -99,
-  },
-  bgText: {},
-});
 export default Banner;
