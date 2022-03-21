@@ -14,26 +14,20 @@ function Banner() {
           height: "75vh",
         }}
       >
-        <Container maxWidth="sm" sx={{ py: 12, height: "75vh" }}>
+        <Container maxWidth="sm" sx={{ py: 20, height: "100%" }}>
+          <Typography component="h1" variant="h4" align="center" sx={{ pb: 2 }}>
+            Let Us Take Care Of Your Smile
+          </Typography>
           <Typography
-            component="h1"
-            variant="h3"
+            variant="body1"
             align="center"
-            fontWeight={600}
-            color="secondary"
-            gutterBottom
+            color="text.secondary"
+            paragraph
+            sx={{ pb: 2 }}
           >
-            Let Us Take Care Of Your Smile
+            With Latest Technology and best doctors in the Industry
           </Typography>
-          <Typography variant="h5" align="center" paragraph color="secondary">
-            Let Us Take Care Of Your Smile
-          </Typography>
-          <Stack
-            sx={{ pt: 4 }}
-            direction="row"
-            spacing={2}
-            justifyContent="center"
-          >
+          <Stack direction="row" spacing={2} justifyContent="center">
             <Button
               color="secondary"
               size="large"
@@ -46,8 +40,8 @@ function Banner() {
               More Service
             </Button>
             <Button
-              variant="outlined"
               color="secondary"
+              variant="outlined"
               sx={{ fontWeight: 600 }}
             >
               Learn More
